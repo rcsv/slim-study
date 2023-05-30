@@ -1,0 +1,24 @@
+{
+    "name": "rcsvpg/oreno-url-shortener-admin",
+    "type": "project",
+    "require": {
+        "slim/slim": "^4.11",
+        "slim/psr7": "^1.6",
+        "slim/twig-view": "^3.3",
+        "php-di/php-di": "^7.0",
+        "monolog/monolog": "^3.3",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rcsvpg\\Murls\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rcsv",
+            "email": "rcsvpg@gmail.com"
+        }
+    ]
+}
