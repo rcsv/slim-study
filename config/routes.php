@@ -11,3 +11,4 @@ $app->any('/', function ($request, $response, $args) {
 });
 
 $app->any('/hello/{name}', HelloController::class . ':sayHello');
+$app->any('/hello/{name}/template', HelloController::class . ':sayHelloWithTemplate');
