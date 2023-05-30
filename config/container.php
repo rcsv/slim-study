@@ -8,12 +8,11 @@ use Slim\Views\Twig;
 use Slim\Factory\AppFactory;
 
 $container = new Container();
-$container->set('view', function() {
-    $twig = Twig::create(__DIR__ . '/../templates', [
-        'cache' => __DIR__ . '/../var/cache/twig',
-        'debug' => true,
-    ]);
-});
+$container->set('view', 
+    function () {
+        $twig = Twig::create(__DIR__ . '/../templates');
+        return $twig;
+    });
 
 // set container to AppFactory
 AppFactory::setContainer($container);
